@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- 请把这个文件放到 templates 目录下 -->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Wechat</title>
+</head>
+<body>
+{% if alive %}
+机器人 {{ bot.storageClass.nickName }} 在线，<a href="/logout">登出</a>
+{% else %}
+机器人离线，<a href="/login">请登录</a>
+{% endif %}
+</body>
+</html>
